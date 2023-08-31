@@ -1,4 +1,4 @@
-function flex2html(element, json) {
+function flex2html(json, element) {
    let carousel = carousel_struc()
    let result = ''
 
@@ -17,7 +17,7 @@ function flex2html(element, json) {
       }
    }
    
-   document.getElementById(element).innerHTML += carousel
+   if (element) document.getElementById(element).innerHTML += carousel
    return carousel
 }
 
